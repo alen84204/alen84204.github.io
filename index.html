@@ -96,6 +96,7 @@
         <a href="about.html">關於我們</a>
         <a href="contact.html" class="nav-cta">聯絡我們</a>
       </nav>
+      <button class="lang-toggle" type="button" title="English version coming soon">中｜EN</button>
       <button class="menu-toggle" id="menuToggle" aria-label="開啟選單">
         <span></span><span></span><span></span>
       </button>
@@ -162,6 +163,25 @@
     </div>
   </section>
 
+  <!-- ===== 空間展示 =====
+       注意：以下為「免版權示意圖」（Unsplash），非本中心實景。
+       業主實拍照片到位後，替換 <img> 的 src 即可。見 placeholders-todo.md -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <p class="section-tag">Gallery</p>
+      <h2 class="section-title">空間搶先看</h2>
+      <p class="section-sub">明亮、專業、即租即用。以下為空間示意，歡迎預約現場參觀感受實際環境。</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format&fit=crop" alt="獨立辦公室示意" loading="lazy"><figcaption>獨立辦公室</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=800&q=80&auto=format&fit=crop" alt="會議室示意" loading="lazy"><figcaption>會議室</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&q=80&auto=format&fit=crop" alt="共享工作區示意" loading="lazy"><figcaption>共享工作區</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80&auto=format&fit=crop" alt="開放辦公空間示意" loading="lazy"><figcaption>開放辦公空間</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80&auto=format&fit=crop" alt="洽談接待區示意" loading="lazy"><figcaption>洽談接待區</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&q=80&auto=format&fit=crop" alt="茶水交誼區示意" loading="lazy"><figcaption>茶水交誼區</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== 信任區：我們有所不收 ===== -->
   <section class="section section-alt" id="trust">
     <div class="container">
@@ -214,6 +234,43 @@
     </div>
   </section>
 
+  <!-- ===== 客戶見證 =====
+       注意：以下為「示意用範例見證」，非真實客戶評價，僅供版面呈現。
+       業主提供真實見證／同意露出之客戶後再替換。見 placeholders-todo.md -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <p class="section-tag">Testimonials</p>
+      <h2 class="section-title">進駐夥伴怎麼說</h2>
+      <p class="section-sub">（以下為示意內容，正式客戶見證陸續更新中）</p>
+
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p>「公司登記流程很快，地址在大安區對接客戶時很有面子。信件當天就收到 LINE 通知，再也不怕漏掉政府公文。」</p>
+          <p class="who">— 科技新創公司 L 共同創辦人</p>
+        </article>
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p>「我們集團旗下幾家分公司都登記在這裡，窗口統一、管理省心，展店時的據點安排也幫我們想得很周到。」</p>
+          <p class="who">— 醫美集團 行政管理 W 經理</p>
+        </article>
+        <article class="testimonial">
+          <p class="stars">★★★★★</p>
+          <p>「一個人接案，本來用自宅登記很沒安全感。改到這裡之後地址專業多了，會議室也能臨時借來見客戶。」</p>
+          <p class="who">— 設計工作室 C 設計師</p>
+        </article>
+      </div>
+
+      <!-- 進駐客戶 logo 牆（示意） -->
+      <div class="logo-strip">
+        <div class="logo-chip">科技新創<span>AI / SaaS</span></div>
+        <div class="logo-chip">醫美集團<span>連鎖分公司</span></div>
+        <div class="logo-chip">顧問事務所<span>專業服務</span></div>
+        <div class="logo-chip">跨境電商<span>網路零售</span></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== 預約參觀表單 ===== -->
   <section class="section section-alt" id="booking">
     <div class="container">
@@ -262,8 +319,9 @@
   <!-- ===== 頁尾 ===== -->
   <footer class="site-footer">
     <div class="container">
+      <p class="footer-news">📩 想收到空房與優惠通知？<a data-config-href="lineUrl" target="_blank" rel="noopener">加入官方 LINE →</a></p>
       <p><strong data-config="brandName">汎馬商辦中心</strong>　大安光復館｜<span data-config="address">台北市大安區光復南路107號8樓</span></p>
-      <p class="footer-legal"><span data-config="companyName">汎馬整合行銷有限公司</span>　負責人：<span data-config="owner">余文魁</span>　公司登記地址：<span data-config="regAddress">新北市淡水區新市三路一段68號10樓</span></p>
+      <p class="footer-legal"><span data-config="companyName">汎馬整合行銷有限公司</span>　統一編號：<span data-config="taxId">83695998</span>　負責人：<span data-config="owner">余文魁</span>　公司登記地址：<span data-config="regAddress">新北市淡水區新市三路一段68號10樓</span></p>
       <p>© 2026 <span data-config="companyName">汎馬整合行銷有限公司</span> All rights reserved.</p>
     </div>
   </footer>
@@ -271,6 +329,7 @@
   <!-- ===== 懸浮 CTA：LINE + 電話一鍵撥打 ===== -->
   <div class="float-cta">
     <a class="float-line" data-config-href="lineUrl" target="_blank" rel="noopener">💬 LINE 詢問</a>
+    <a class="float-tel" data-config-href="telPhone">📞 一鍵撥打</a>
   </div>
 
   <script src="js/site-config.js"></script>

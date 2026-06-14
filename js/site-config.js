@@ -11,6 +11,7 @@ window.SITE_CONFIG = {
 
   // 公司法律主體資訊（頁尾顯示用）
   companyName: "汎馬整合行銷有限公司",
+  taxId: "83695998",          // 統一編號
   owner: "余文魁",            // 負責人
   ownerEn: "AlenYu",
 
@@ -18,12 +19,15 @@ window.SITE_CONFIG = {
   displayPhone: "0963-666-859",
   telPhone: "+886963666859",
 
-  // LINE 官方帳號（已確認）
+  // LINE 官方帳號（已確認）。lineUrl 為官方加好友短網址
   lineId: "@137ffcjz",
-  lineUrl: "https://line.me/R/ti/p/@137ffcjz",
+  lineUrl: "https://lin.ee/N1t32aK",
 
   // Email（已確認）
   email: "alengj5566@gmail.com",
+
+  // Google 商家連結（佔位，待商家帳號確認後補上正式網址）—— 見 placeholders-todo.md
+  googleBusinessUrl: "https://www.google.com.tw/maps/",
 
   // 商辦中心實際位置（客戶來訪、賞屋的地點 = 大安光復館）
   address: "台北市大安區光復南路107號8樓（光復大樓）",
