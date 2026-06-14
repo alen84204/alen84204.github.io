@@ -37,6 +37,14 @@
     });
   }
 
+  // ---- 2.5 語言切換鈕（功能尚未實裝，點擊提示） ----
+  var langBtn = document.querySelector(".lang-toggle");
+  if (langBtn) {
+    langBtn.addEventListener("click", function () {
+      alert("該功能並未實裝，有需要再開發\nby 文魁");
+    });
+  }
+
   // ---- 3. 預約參觀表單 ----
   // 尚未串接後端，送出時組好訊息並引導至 LINE（最高轉換通路）。
   var form = document.getElementById("contactForm");
