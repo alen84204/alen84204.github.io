@@ -1,5 +1,5 @@
 /* ============================================================
-   光復商務中心 — 全站樣式（行動版優先）
+   汎馬商辦中心 — 全站樣式（行動版優先）
    ============================================================ */
 
 :root {
@@ -291,7 +291,7 @@ table.price-table {
 .tag-free { background: #e3f6ea; color: #1e7d46; }
 .tag-ask  { background: #fdf2dd; color: var(--gold-dark); }
 
-/* ---------- 部落格卡片附加 ---------- */
+/* ---------- 專欄卡片附加 ---------- */
 .card .card-meta { font-size: .8rem; color: var(--ink-soft); margin-top: 10px; }
 
 /* ---------- 地圖嵌入 ---------- */
@@ -315,6 +315,8 @@ table.price-table {
   font-size: .85rem; text-align: center;
 }
 .site-footer a { color: #fff; }
+.site-footer p { margin: 2px 0; }
+.footer-legal { font-size: .78rem; color: #8595ad; }
 
 /* ---------- 懸浮 CTA（LINE + 電話） ---------- */
 .float-cta {
