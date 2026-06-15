@@ -205,7 +205,7 @@ HTML 中不要硬寫聯絡資料，改用以下屬性，`main.js` 會自動填�
 
 ## 十、推薦的下一步任務（按優先序）
 
-1. **繼續寫 SEO 文章** — A6（借址登記各行業適用性）或 B1（公司資本額怎麼決定）
+1. **繼續寫 SEO 文章** — ⭐ 照 [WRITING-GUIDE.md](WRITING-GUIDE.md) 一步步做（含完整 HTML 範本與配圖清單）。選題從 competitor-titles.md Part 2 勾選或標 🔥 的開始。
 2. **部落格列表頁更新** — 每新增文章後，要把連結加進 `blog/index.html`
 3. **辦公室頁面補完** — 等業主提供21間房的坪數/定價/照片後更新 `offices.html`
 4. **Google 商家確認後** — 更新 site-config.js 的 googleBusinessUrl 和 mapEmbedUrl
