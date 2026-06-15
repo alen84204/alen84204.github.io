@@ -80,7 +80,15 @@ ul { list-style: none; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 70%, #2a5391 100%);
+  /* 底圖為免版權示意圖（Unsplash 商辦大樓），上方疊深藍漸層確保白字可讀；
+     業主大巨蛋/大樓實拍到位後，替換下方 url() 即可。見 placeholders-todo.md */
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(160deg, rgba(17,41,75,.92) 0%, rgba(23,52,90,.78) 55%, rgba(42,83,145,.62) 100%),
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 56px 0 48px;
 }
