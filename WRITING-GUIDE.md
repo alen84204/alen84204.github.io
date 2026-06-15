@@ -117,9 +117,10 @@
         <strong>30 秒快速了解：</strong>{{2–3 句重點，用 <strong> 標關鍵字}}
       </div>
 
-      <!-- 注意：以下為免版權示意圖（Unsplash），非本中心實景，業主實拍到位後替換 src -->
+      <!-- 注意：以下為免版權示意圖，非本中心實景，業主實拍到位後替換 src。
+           ★ 圖片一律用本機自架（images/ 內），不要直接連 Unsplash 網址（會載不出來） -->
       <figure class="hero-figure">
-        <img src="https://images.unsplash.com/photo-{{圖片ID}}?w=1200&q=80&auto=format&fit=crop" alt="{{…情境示意}}" loading="lazy">
+        <img src="../images/photo-{{圖片ID}}.jpg" alt="{{…情境示意}}" loading="lazy">
       </figure>
 
       <nav class="toc">
@@ -195,12 +196,13 @@
 </html>
 ```
 
-## 六、可用的 Unsplash 配圖 ID（皆已驗證可載入，商務主題）
+## 六、配圖：一律用本機自架圖（images/ 內，勿連外部 Unsplash）
 
-格式：`https://images.unsplash.com/photo-{ID}?w=1200&q=80&auto=format&fit=crop`
-（卡片縮圖用 `w=600&q=75`）
+⚠️ **重要**：本站圖片已全部下載到 `images/` 自架，HTML 一律用 `../images/photo-<ID>.jpg`（blog 內）或 `images/photo-<ID>.jpg`（根目錄）。**不要直接寫 `https://images.unsplash.com/...` 網址——會載不出來。**
 
-| ID | 內容 |
+`images/` 內現有可重複使用的商務主題圖（檔名即 `photo-<ID>.jpg`）：
+
+| 檔名 photo-<ID>.jpg 的 ID | 內容 |
 |----|------|
 | 1497366216548-37526070297c | 獨立辦公室 |
 | 1431540015161-0bf868a2d407 | 會議室 |
@@ -214,14 +216,15 @@
 | 1521737604893-d14cc237f11d | 團隊協作 |
 | 1454165804606-c3d57bc86b40 | 文件審閱／簽約（適合登記、流程題） |
 
-> 用前可先用 curl 確認回 200。實拍照到位後業主會替換。
+> 還有更多（稅務、發票、城市、團隊等）——直接 `ls images/` 看現有的 `photo-*.jpg` 挑用。
+> 若真的需要新圖：先用 curl/python 下載到 `images/photo-<ID>.jpg`，再用本機路徑引用。實拍照到位後業主會替換。
 
 ## 七、寫完後一定要做的兩件事
 
 1. **把文章加到專欄列表 `blog/index.html`**：在 `<div class="card-grid">` 最上方（最新在前）插入一張卡片：
    ```html
    <article class="card">
-     <a class="card-thumb" href="{{檔名}}.html"><img src="https://images.unsplash.com/photo-{{ID}}?w=600&q=75&auto=format&fit=crop" alt="" loading="lazy"></a>
+     <a class="card-thumb" href="{{檔名}}.html"><img src="../images/photo-{{ID}}.jpg" alt="" loading="lazy"></a>
      <h3><a href="{{檔名}}.html">{{標題}}</a></h3>
      <p>{{一句摘要}}</p>
      <p class="card-meta">📅 {{YYYY-MM-DD}}</p>
