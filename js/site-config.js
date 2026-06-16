@@ -30,12 +30,12 @@ window.SITE_CONFIG = {
   googleBusinessUrl: "https://www.google.com.tw/maps/",
 
   // 商辦中心實際位置（客戶來訪、賞屋的地點 = 大安光復館）
-  address: "台北市大安區光復南路107號8樓（光復大樓）",
-  addressShort: "光復南路107號8樓",
+  address: "台北市大安區光復南路102號8樓（光復大樓）",
+  addressShort: "光復南路102號8樓",
 
   // 公司「登記地址」（法律主體登記處，非實際辦公地點）
   regAddress: "新北市淡水區新市三路一段68號10樓",
 
   // Google Maps 嵌入網址（以實際商辦位置搜尋；之後可換成商家專屬嵌入碼）
-  mapEmbedUrl: "https://www.google.com/maps?q=台北市大安區光復南路107號&output=embed"
+  mapEmbedUrl: "https://www.google.com/maps?q=台北市大安區光復南路102號&output=embed"
 };
