@@ -12,3 +12,6 @@ google-form-spec.md
 
 # Codex 本機備份，不納入版控
 .codex/
+
+# Playwright 測試輸出
+.playwright-mcp/

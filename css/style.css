@@ -203,7 +203,7 @@ ul { list-style: none; }
 .card-thumb { display: block; margin: -28px -24px 18px; height: 180px; overflow: hidden; }
 .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
 .card:hover .card-thumb img { transform: scale(1.05); }
-.card-icon { font-size: 1.7rem; }
+.card-icon { color: var(--gold-700); display: inline-flex; }
 .card h3 { font-family: var(--serif); font-size: 1.18rem; color: var(--ink); margin: 10px 0 8px; line-height: 1.45; }
 .card h3 a:hover { color: var(--gold-700); }
 .card p { font-size: .94rem; color: var(--ink-soft); }

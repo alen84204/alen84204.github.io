@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /商務中心服務方案_列印版.html
+
+Sitemap: https://alen84204.github.io/sitemap.xml
