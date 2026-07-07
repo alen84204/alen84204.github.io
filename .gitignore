@@ -8,3 +8,6 @@ competitor-directory.md
 
 # 本機工具設定
 .claude/
+
+# Codex 本機備份，不納入版控
+.codex/
