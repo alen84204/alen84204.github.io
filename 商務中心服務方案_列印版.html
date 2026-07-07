@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MJ HUB商務中心｜服務方案初步架構</title>
+  <style>
+    :root {
+      --green: #0f6b58;
+      --green-dark: #082f28;
+      --green-soft: #edf4f0;
+      --gold: #b98535;
+      --ink: #18211f;
+      --muted: #5c6965;
+      --line: #ccd8d3;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e9eeeb;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .document {
+      width: min(100%, 210mm);
+      margin: 24px auto;
+      padding: 18mm 16mm;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(8, 47, 40, .12);
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; color: var(--green-dark); font-size: 30px; line-height: 1.25; }
+    h2 {
+      margin: 34px 0 14px;
+      padding-bottom: 8px;
+      color: var(--green-dark);
+      border-bottom: 2px solid var(--green);
+      font-size: 22px;
+    }
+    h3 { margin: 24px 0 8px; color: var(--green); font-size: 18px; }
+    .eyebrow { margin-bottom: 6px; color: var(--gold); font-size: 12px; font-weight: 800; letter-spacing: .12em; }
+    .subtitle { color: var(--muted); font-size: 16px; }
+    .meta { margin: 18px 0 26px; padding: 12px 16px; background: var(--green-soft); border-left: 4px solid var(--green); }
+    .meta p { margin: 0; }
+    .legend { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 12px 0; font-weight: 700; }
+    .yes { color: var(--green); font-weight: 900; }
+    .optional { color: var(--gold); font-weight: 900; }
+    .no { color: #8c9692; }
+    ul { margin: 8px 0 18px; padding-left: 22px; }
+    li { margin: 4px 0; }
+    .service-block {
+      margin: 14px 0;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      break-inside: avoid;
+    }
+    .service-block h3 { margin-top: 0; }
+    .service-block p { margin-bottom: 8px; color: var(--muted); }
+    table {
+      width: 100%;
+      margin: 12px 0 24px;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    th, td { padding: 8px 7px; border: 1px solid var(--line); vertical-align: middle; }
+    th { color: #fff; background: var(--green-dark); font-weight: 800; text-align: center; }
+    th:first-child, td:first-child { text-align: left; }
+    td:not(:first-child) { text-align: center; }
+    tbody tr:nth-child(even) { background: #f6f8f7; }
+    .group td { color: var(--green-dark); background: var(--green-soft) !important; font-weight: 900; text-align: left !important; }
+    .summary-table { font-size: 12.5px; }
+    .note { padding: 12px 15px; color: var(--muted); background: #f7f4ed; border-left: 4px solid var(--gold); }
+    .page-break { break-before: page; }
+    .screen-tip { margin: 0 auto 20px; width: min(100%, 210mm); color: var(--muted); text-align: center; }
+    @page { size: A4 portrait; margin: 13mm 11mm; }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .screen-tip { display: none; }
+      .document { width: auto; margin: 0; padding: 0; box-shadow: none; }
+      h2 { break-after: avoid; }
+      h3 { break-after: avoid; }
+      table { font-size: 8.5pt; }
+      thead { display: table-header-group; }
+      tr { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="screen-tip">列印方式：使用瀏覽器開啟後按 Ctrl＋P，紙張選擇 A4、縮放選擇「符合頁面」。</p>
+  <main class="document">
+    <header>
+      <p class="eyebrow">SERVICE FRAMEWORK / INITIAL DRAFT</p>
+      <h1>MJ HUB商務中心｜服務方案初步架構</h1>
+      <p class="subtitle">從公司登記、商務秘書、共享座位到全配獨立辦公室</p>
+      <div class="meta">
+        <p><strong>文件用途：</strong>服務內容討論、方案定價規劃、客戶說明與列印簡報</p>
+        <p><strong>版本日期：</strong>2026 年 7 月 1 日</p>
+        <p><strong>提醒：</strong>本文件為初步架構，價格、免費額度、加購費用與實際服務範圍仍待確認。</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>第一部分｜完整服務架構</h2>
+
+      <article class="service-block">
+        <h3>一、公司登記／借址登記</h3>
+        <p>適合新設公司、工作室、分公司，以及只需要公司登記地址的企業。</p>
+        <ul>
+          <li>提供公司、行號或分公司登記地址。</li>
+          <li>簽訂地址使用契約。</li>
+          <li>提供主管機關所需的地址使用相關文件。</li>
+          <li>提供登記行業初步適用性審查與特許行業提醒。</li>
+          <li>說明國稅局查核、遷入、遷出及續約流程。</li>
+          <li>登記到期與續約提醒。</li>
+          <li>需要時轉介記帳士或會計師。</li>
+        </ul>
+        <p><strong>服務邊界：</strong>商務中心提供地址、文件與流程協助；是否核准仍由主管機關依個案審核，不承諾保證通過。</p>
+      </article>
+
+      <article class="service-block">
+        <h3>二、政府公文代收</h3>
+        <p>政府與司法機關文件屬高優先級信件，應建立獨立通知與追蹤流程。</p>
+        <ul>
+          <li>代收國稅局、地方政府、經濟部、勞健保及其他主管機關公文。</li>
+          <li>代收法院、行政執行及其他具期限效力的文件。</li>
+          <li>收件當日以 LINE 或 Email 優先通知。</li>
+          <li>通知內容標示寄件機關、收件日期及領取期限。</li>
+          <li>建立公文收件、通知、領取及代領紀錄。</li>
+          <li>未領取公文進行再次提醒。</li>
+          <li>經客戶書面授權後提供掃描或轉寄服務。</li>
+          <li>不得擅自拆閱政府公文。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>三、私人信件代收</h3>
+        <p>包含一般商務往來、銀行、客戶、廠商及私人寄件人的信件。</p>
+        <ul>
+          <li>代收一般平信、掛號、限時與銀行信件。</li>
+          <li>收件當日以 LINE 或 Email 通知。</li>
+          <li>依公司名稱與收件人進行信件分類。</li>
+          <li>建立信件領取及代領紀錄。</li>
+          <li>提供授權他人代領機制。</li>
+          <li>定期提醒長時間未領取信件。</li>
+          <li>經書面授權後提供信封掃描、內容掃描或定期轉寄。</li>
+          <li>不得擅自拆閱私人信件。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>四、包裹代收與轉送</h3>
+        <ul>
+          <li>一般包裹代收與當日通知。</li>
+          <li>包裹尺寸、數量及保存期限管理。</li>
+          <li>大型包裹、冷藏品與貨到付款另訂處理規範。</li>
+          <li>客戶授權後可安排快遞或宅配轉送。</li>
+          <li>建立包裹領取、代領與轉送紀錄。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>五、公司設立與工商異動協助</h3>
+        <ul>
+          <li>公司名稱預查、營業項目及組織型態流程說明。</li>
+          <li>提供公司、行號與分公司設立文件清單。</li>
+          <li>地址變更、負責人變更及營業項目變更流程提醒。</li>
+          <li>銀行籌備戶、驗資、稅籍登記及發票申請流程說明。</li>
+          <li>轉介合作記帳士、會計師及公司設立代辦人員。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>六、虛擬辦公室／商務秘書</h3>
+        <ul>
+          <li>公司地址公開使用及公司名錄顯示。</li>
+          <li>訪客到訪通知、櫃檯接待與留言。</li>
+          <li>專屬電話號碼、電話秘書代接及總機轉接。</li>
+          <li>會議室優惠時數與臨時辦公座位。</li>
+          <li>文件列印、掃描、影印及裝訂。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>七、共享座位與彈性辦公</h3>
+        <ul>
+          <li>單日、計時、彈性月租及固定專屬座位。</li>
+          <li>高速網路、插座、充電設備與公共茶水區。</li>
+          <li>個人置物櫃、影印掃描額度及會議室優惠。</li>
+          <li>平日或延長時段門禁權限。</li>
+          <li>可依需求加購公司登記與商務秘書服務。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>八、會議室與臨時辦公室</h3>
+        <ul>
+          <li>小型洽談室、中型會議室與臨時獨立辦公室。</li>
+          <li>小時、半日及全日租借。</li>
+          <li>投影、顯示設備、白板、Wi-Fi 與視訊會議設備。</li>
+          <li>訪客引導、茶水、會議前設備測試與場地布置。</li>
+          <li>會後清潔與設備復原。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>九、全配獨立辦公室</h3>
+        <ul>
+          <li>獨立可上鎖辦公空間、辦公桌椅及收納櫃。</li>
+          <li>高速網路、冷氣、水電、門禁及公共區域清潔。</li>
+          <li>公司登記地址、政府公文與私人信件代收。</li>
+          <li>包裹代收、訪客通知、櫃檯接待及公共接待區。</li>
+          <li>會議室優惠或固定免費時數。</li>
+          <li>可加購電話秘書、辦公室清潔及額外家具設備。</li>
+          <li>團隊擴編、換房及多間辦公室合併服務。</li>
+        </ul>
+      </article>
+
+      <article class="service-block">
+        <h3>十、集團與多分公司專案</h3>
+        <ul>
+          <li>多戶公司或分公司登記需求規劃。</li>
+          <li>各公司政府公文、私人信件與包裹分流。</li>
+          <li>統一窗口、獨立收件紀錄、月結帳務與統一請款。</li>
+          <li>多間辦公室組合、專屬會議室時數及年度合約。</li>
+          <li>需要時配合會計師確認登記架構。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="page-break">
+      <h2>第二部分｜客戶方案比較表</h2>
+      <p>符號說明：</p>
+      <div class="legend">
+        <span class="yes">● 方案包含</span>
+        <span class="optional">△ 可加購、依額度或享優惠</span>
+        <span class="no">— 不提供</span>
+      </div>
+
+      <h3>方案定位</h3>
+      <table>
+        <thead><tr><th>方案階段</th><th>適合對象</th><th>核心需求</th></tr></thead>
+        <tbody>
+          <tr><td>基本登記</td><td>剛成立、只需要登記地址</td><td>地址、政府公文與私人信件通知</td></tr>
+          <tr><td>商務登記</td><td>有包裹、公文與偶爾開會需求</td><td>完整收件、包裹與會議室優惠</td></tr>
+          <tr><td>虛擬辦公</td><td>沒有固定辦公室，但需要企業門面</td><td>電話秘書、訪客接待與臨時座位</td></tr>
+          <tr><td>共享辦公</td><td>需要固定工作地點的一人公司</td><td>座位、網路與公共設施</td></tr>
+          <tr><td>獨立辦公室</td><td>需要完整營運空間的團隊</td><td>私人空間、家具、門禁與完整服務</td></tr>
+        </tbody>
+      </table>
+
+      <h3>一、公司登記服務</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>公司／行號登記地址使用</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>地址使用契約</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>地址相關證明文件</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>登記行業初步審查</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>國稅局查核流程說明</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>登記期限與續約提醒</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>記帳士／會計師轉介</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>多公司／分公司登記規劃</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+        </tbody>
+      </table>
+
+      <h3>二、政府公文、私人信件與包裹服務</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr class="group"><td colspan="6">政府公文</td></tr>
+          <tr><td>政府與司法公文代收</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>政府公文當日優先通知</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>寄件機關與期限標示</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>公文通知、領取與代領紀錄</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>未領政府公文再次提醒</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>政府公文掃描</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr class="group"><td colspan="6">私人信件</td></tr>
+          <tr><td>一般私人信件代收</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>私人掛號與銀行信件代收</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>私人信件當日通知</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>私人信件領取與代領紀錄</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>未領私人信件定期提醒</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>私人信件掃描</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr class="group"><td colspan="6">包裹與轉送</td></tr>
+          <tr><td>一般包裹代收</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>大型包裹代收</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>定期轉寄</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>急件快遞轉送</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+        </tbody>
+      </table>
+
+      <h3>三、電話秘書與企業門面</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>商務中心地址公開使用</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>公司名稱名錄顯示</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>公司名稱門牌</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>訪客到訪通知</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>櫃檯訪客接待</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>專屬電話號碼</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>電話秘書代接</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>留言即時通知</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="optional">△</td><td class="optional">△</td></tr>
+        </tbody>
+      </table>
+
+      <h3>四、辦公座位與空間</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>臨時公共座位</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>固定專屬座位</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>獨立上鎖辦公室</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td></tr>
+          <tr><td>辦公桌椅</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>個人置物櫃</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>高速網路</td><td class="no">—</td><td class="no">—</td><td>使用時提供</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>公共茶水與接待區</td><td class="no">—</td><td>會議時提供</td><td>使用時提供</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>平日門禁權限</td><td class="no">—</td><td class="no">—</td><td>依預約</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>延長時段／24 小時門禁</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td></tr>
+        </tbody>
+      </table>
+
+      <h3>五、會議室服務</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>會議室預約</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>會議室優惠價格</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>每月免費會議時數</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>投影、顯示設備與白板</td><td>使用時提供</td><td>使用時提供</td><td>使用時提供</td><td>使用時提供</td><td>使用時提供</td></tr>
+          <tr><td>視訊會議設備</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>訪客引導</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>茶水與會前設備測試</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+        </tbody>
+      </table>
+
+      <h3>六、辦公室營運服務</h3>
+      <table>
+        <thead><tr><th>服務項目</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>水電與冷氣</td><td class="no">—</td><td class="no">—</td><td>使用時包含</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>公共區域清潔</td><td class="no">—</td><td class="no">—</td><td>使用時包含</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>獨立辦公室清潔</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td></tr>
+          <tr><td>影印、列印、掃描</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>辦公家具調整</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>網路設備協助</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>團隊擴編換房</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td></tr>
+          <tr><td>多間辦公室合併</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td></tr>
+        </tbody>
+      </table>
+
+      <h3>客戶快速比較版</h3>
+      <table class="summary-table">
+        <thead><tr><th>主要服務</th><th>基本登記</th><th>商務登記</th><th>虛擬辦公</th><th>共享辦公</th><th>獨立辦公室</th></tr></thead>
+        <tbody>
+          <tr><td>公司登記地址</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="optional">△</td><td class="yes">●</td></tr>
+          <tr><td>政府公文代收與優先通知</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>私人信件代收與通知</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>包裹代收</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>會議室優惠</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>訪客接待</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>電話秘書</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="optional">△</td><td class="optional">△</td></tr>
+          <tr><td>臨時辦公座位</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>固定辦公座位</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>獨立辦公空間</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td></tr>
+          <tr><td>家具、網路、水電</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td>公司門牌</td><td class="no">—</td><td class="no">—</td><td class="optional">△</td><td class="optional">△</td><td class="yes">●</td></tr>
+        </tbody>
+      </table>
+
+      <p class="note"><strong>後續待補：</strong>各方案正式名稱、月費／年費、免費會議室時數、信件掃描額度、轉寄費用、門禁時段、電話秘書通數，以及大型包裹限制。</p>
+    </section>
+  </main>
+</body>
+</html>
