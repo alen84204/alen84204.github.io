@@ -1,26 +1,26 @@
 /* ============================================================
    汎馬商辦中心 — 全站樣式（行動版優先）
-   風格：事務所編輯風 × 墨綠主色系
-   墨綠橫幅＋淺青色帶＋暖銅點綴、襯線標題、方正、以色塊與細線填滿版面
+   風格：事務所編輯風 × 深藍×金主色系（對齊 MJ HUB 品牌 Logo）
+   深藍橫幅＋淺藍灰色帶＋金色點綴、襯線標題、方正、以色塊與細線填滿版面
    ============================================================ */
 
 :root {
   --ink: #1c1c18;          /* 主色：近黑墨（標題、內文） */
   --ink-soft: #605c52;     /* 次要文字 */
-  --green: #2f5d4f;        /* 品牌綠（點綴、連結、主按鈕） */
-  --green-deep: #1e3d33;   /* 深森綠（橫幅、CTA、頁尾大色塊） */
-  --green-dark: #244338;
-  --brass: #b3884a;        /* 暖銅（數字、細節點綴，少量提味） */
+  --green: #2b3a5e;        /* 品牌深藍（點綴、連結、主按鈕）＝Logo 藍 */
+  --green-deep: #1f2b47;   /* 深藍（橫幅、CTA、頁尾大色塊）＝Logo 深藍 */
+  --green-dark: #263453;
+  --brass: #b08a4c;        /* 金（數字、細節點綴）＝Logo 金 */
   --brass-light: #d8b577;  /* 深色底上的銅字 */
   --line-green: #06c755;   /* LINE 官方綠（LINE 按鈕專用） */
   --paper: #f5efe2;        /* 頁面底：暖米（比純白更有溫度、不空） */
   --bg: #ffffff;           /* 卡片／內容底：白 */
-  --sage: #e7ede2;         /* 淺青色帶（區塊交替、卡片區、表頭） */
-  --sage-deep: #dde6d6;
-  --bg-alt: #e7ede2;       /* = sage（沿用舊變數名） */
+  --sage: #e9ecf3;         /* 淺藍灰色帶（區塊交替、卡片區、表頭） */
+  --sage-deep: #dde3ee;
+  --bg-alt: #e9ecf3;       /* = sage（沿用舊變數名） */
   --border: #d9d2c2;       /* 細線：暖灰 */
   --border-ink: #c2bba8;
-  --border-sage: #c6d2bc;
+  --border-sage: #c6cede;
   --radius: 0;
   --shadow: none;
   --maxw: 1080px;
@@ -77,7 +77,7 @@ ul { list-style: none; }
 /* ---------- Hero（首頁主視覺：深綠色塊填滿） ---------- */
 .hero {
   background: var(--green-deep);
-  color: #f3ede0;
+  color: #eef0f5;
   padding: 64px 0 56px;
   border-bottom: 4px solid var(--brass);
 }
@@ -87,11 +87,11 @@ ul { list-style: none; }
   padding-bottom: 14px; margin-bottom: 18px; border-bottom: 1px solid rgba(216,181,119,.45);
 }
 .hero h1 { font-family: var(--serif); font-size: 2.1rem; line-height: 1.3; font-weight: 700; letter-spacing: .01em; color: #fff; }
-.hero-sub { margin-top: 18px; font-size: 1.02rem; color: #d6ddd2; max-width: 640px; }
+.hero-sub { margin-top: 18px; font-size: 1.02rem; color: #cdd4e2; max-width: 640px; }
 .hero-sub strong { color: #fff; font-weight: 700; }
 
 .hero-price { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid rgba(255,255,255,.2); }
-.hero-price li { padding: 16px 30px 0 0; margin-right: 30px; font-size: .9rem; color: #cdd4c9; }
+.hero-price li { padding: 16px 30px 0 0; margin-right: 30px; font-size: .9rem; color: #c3cbdc; }
 .hero-price strong { font-family: var(--serif); color: var(--brass-light); font-size: 1.6rem; font-weight: 700; display: inline-block; margin: 0 4px; }
 
 .hero-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
@@ -108,8 +108,8 @@ ul { list-style: none; }
 .btn-gold:hover { background: #9c7339; }
 .btn-ghost { border-color: var(--ink); color: var(--ink); background: transparent; }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
-.btn-navy { background: var(--green-deep); color: #f3ede0; }  /* 表單送出 */
-.btn-navy:hover { background: #16302812; background: #142b23; }
+.btn-navy { background: var(--green-deep); color: #eef0f5; }  /* 表單送出 */
+.btn-navy:hover { background: #17223a; }
 .btn-block { width: 100%; }
 /* 深色橫幅內的 ghost 按鈕翻成淺色 */
 .hero .btn-ghost, .page-hero .btn-ghost, .article-cta .btn-ghost { border-color: rgba(255,255,255,.7); color: #fff; }
@@ -184,10 +184,10 @@ ul { list-style: none; }
 .contact-info a:hover { color: var(--brass); }
 
 /* ---------- 內頁：頁首橫幅（深綠色塊） ---------- */
-.page-hero { background: var(--green-deep); color: #f3ede0; padding: 52px 0 46px; border-bottom: 4px solid var(--brass); }
+.page-hero { background: var(--green-deep); color: #eef0f5; padding: 52px 0 46px; border-bottom: 4px solid var(--brass); }
 .page-hero .hero-kicker { color: var(--brass-light); border-bottom-color: rgba(216,181,119,.4); }
 .page-hero h1 { font-family: var(--serif); font-size: 1.7rem; font-weight: 700; line-height: 1.4; color: #fff; }
-.page-hero .hero-sub { margin-top: 12px; color: #d6ddd2; }
+.page-hero .hero-sub { margin-top: 12px; color: #cdd4e2; }
 
 /* ---------- 文章摘要框 ---------- */
 .summary-box { margin-top: 30px; background: var(--sage); border: 0; border-left: 4px solid var(--green); border-radius: 0; padding: 20px 24px; font-size: .97rem; color: var(--ink); line-height: 1.9; }
@@ -229,7 +229,7 @@ ul { list-style: none; }
 /* ---------- 費用表 ---------- */
 .price-table-wrap { overflow-x: auto; margin: 20px 0; }
 table.price-table { width: 100%; border-collapse: collapse; background: var(--bg); border-radius: 0; box-shadow: none; font-size: .94rem; min-width: 560px; border: 1px solid var(--border); }
-.price-table th { background: var(--green-deep); color: #f3ede0; padding: 13px 14px; text-align: left; font-weight: 700; white-space: nowrap; }
+.price-table th { background: var(--green-deep); color: #eef0f5; padding: 13px 14px; text-align: left; font-weight: 700; white-space: nowrap; }
 .price-table td { padding: 13px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .price-table tr:last-child td { border-bottom: 0; }
 .price-table .highlight { background: var(--sage); }
@@ -237,9 +237,9 @@ table.price-table { width: 100%; border-collapse: collapse; background: var(--bg
 .table-note { font-size: .85rem; color: var(--ink-soft); }
 
 /* ---------- 文末固定 CTA ---------- */
-.article-cta { margin-top: 50px; background: var(--green-deep); color: #f3ede0; border-radius: 0; padding: 38px 26px; text-align: center; border-top: 4px solid var(--brass); }
+.article-cta { margin-top: 50px; background: var(--green-deep); color: #eef0f5; border-radius: 0; padding: 38px 26px; text-align: center; border-top: 4px solid var(--brass); }
 .article-cta h2 { font-family: var(--serif); font-size: 1.4rem; color: #fff; }
-.article-cta p { color: #d6ddd2; margin-top: 10px; font-size: .96rem; }
+.article-cta p { color: #cdd4e2; margin-top: 10px; font-size: .96rem; }
 .article-cta .hero-actions { justify-content: center; margin-top: 22px; }
 
 /* ---------- 空房狀態標籤 ---------- */
@@ -255,10 +255,10 @@ table.price-table { width: 100%; border-collapse: collapse; background: var(--bg
 .qr-box strong { display: block; font-family: var(--serif); color: var(--green-deep); font-size: 1.05rem; margin-bottom: 6px; }
 
 /* ---------- 頁尾 ---------- */
-.site-footer { background: var(--green-deep); color: #c2ccbd; padding: 36px 0 92px; font-size: .85rem; text-align: center; border-top: 4px solid var(--brass); }
+.site-footer { background: var(--green-deep); color: #bfc7d8; padding: 36px 0 92px; font-size: .85rem; text-align: center; border-top: 4px solid var(--brass); }
 .site-footer a { color: #fff; border-bottom: 1px solid var(--brass); }
 .site-footer p { margin: 3px 0; }
-.footer-legal { font-size: .78rem; color: #93a08d; }
+.footer-legal { font-size: .78rem; color: #8f99b0; }
 .footer-news { padding-bottom: 10px; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,.15); }
 .footer-news a { font-weight: 700; }
 
@@ -279,7 +279,7 @@ table.price-table { width: 100%; border-collapse: collapse; background: var(--bg
 .gallery-item { position: relative; border-radius: 0; overflow: hidden; box-shadow: none; border: 1px solid var(--border); aspect-ratio: 4 / 3; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
 .gallery-item:hover img { transform: scale(1.04); }
-.gallery-item figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(30,61,51,.9)); color: #fff; font-size: .9rem; font-weight: 700; padding: 26px 12px 10px; letter-spacing: .04em; }
+.gallery-item figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(31,43,71,.9)); color: #fff; font-size: .9rem; font-weight: 700; padding: 26px 12px 10px; letter-spacing: .04em; }
 
 /* ---------- 進駐客戶 logo 牆 ---------- */
 .logo-strip { margin-top: 26px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border: 1px solid var(--border); border-bottom: 0; }
