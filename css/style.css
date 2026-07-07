@@ -121,6 +121,7 @@ ul { list-style: none; }
 .section-tag { font-size: .78rem; font-weight: 700; letter-spacing: .24em; color: var(--green); text-transform: uppercase; }
 .section-title { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; color: var(--green-deep); margin-top: 8px; }
 .section-sub { color: var(--ink-soft); margin-top: 10px; max-width: 640px; }
+.section-gap { margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--border); }
 
 /* ---------- 服務卡片（實心白卡＋整圈邊框） ---------- */
 .card-grid { display: grid; gap: 16px; margin-top: 30px; }
