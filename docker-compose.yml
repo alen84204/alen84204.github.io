@@ -1,0 +1,12 @@
+# MJ HUB 官網（www2.mjhub.com.tw 測試站）
+# 站台檔案即時掛載（唯讀）：改 HTML/CSS 立即生效，不用重建
+services:
+  web:
+    image: nginx:1.27-alpine
+    container_name: mjhub-www2
+    ports:
+      - "8089:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
