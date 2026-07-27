@@ -3,14 +3,14 @@
 // 異動時只要改這個檔案，全站 data-config 欄位自動生效。
 // ============================================================
 window.SITE_CONFIG = {
-  // 品牌
-  brandName: "MJ HUB",
-  brandNameZh: "邁聚商務中心",
-  brandNameEn: "MJ HUB",
+  // 品牌（以所在「環球經貿中心」大樓為名）
+  brandName: "環球商務中心",
+  brandNameZh: "環球商務中心",
+  brandNameEn: "UIOC",
 
-  // 精神標語（Move Forward．Join Together）
-  slogan: "Move Forward．Join Together",
-  sloganZh: "前進，因為夢想；連結，因為合作。",
+  // 品牌標語
+  slogan: "Your Business Starts Here.",
+  sloganZh: "讓企業從這裡，走向世界。世界，由此啟程。",
 
   // 目前據點
   locationName: "南京館",
@@ -21,7 +21,7 @@ window.SITE_CONFIG = {
   owner: "莊孟潔",            // 負責人
   ownerEn: "Keira Chuang",
 
-  // ⚠️ 電話／LINE／Email 為業主提供之「待確認」資料，正式對外前請再次核對
+  // ⚠ 電話／LINE／Email 為業主提供之「待確認」資料，正式對外前請再次核對
   displayPhone: "0963-666-859",
   telPhone: "+886963666859",
   lineId: "@137ffcjz",
@@ -38,8 +38,8 @@ window.SITE_CONFIG = {
   // 公司「登記地址」（同南京館）
   regAddress: "台北市中山區南京東路三段101號4樓",
 
-  // 未來正式網域
-  siteDomain: "MJHUB.com.tw",
+  // 網域（現行測試 www2.mjhub.com.tw；正式網域待業主定案）
+  siteDomain: "mjhub.com.tw",
 
   // Google Maps 嵌入網址（南京館；商家帳號開通後可換專屬嵌入碼）
   mapEmbedUrl: "https://www.google.com/maps?q=台北市中山區南京東路三段101號&output=embed"
