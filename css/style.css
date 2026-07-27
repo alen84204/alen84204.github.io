@@ -82,7 +82,7 @@ ul { list-style: none; }
 }
 .logo::before {
   content: ""; width: 30px; height: 30px; flex: none;
-  background: url("../images/favicon.png?v=uioc1") center / cover no-repeat;
+  background: url("../images/favicon.png?v=uioc2") center / cover no-repeat;
   border-radius: 7px; box-shadow: var(--shadow-sm);
 }
 .main-nav {

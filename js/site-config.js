@@ -16,10 +16,10 @@ window.SITE_CONFIG = {
   locationName: "南京館",
 
   // 公司法律主體資訊（頁尾顯示用）
-  companyName: "邁聚國際有限公司",
-  taxId: "83695998",          // 統一編號
-  owner: "莊孟潔",            // 負責人
-  ownerEn: "Keira Chuang",
+  companyName: "環球不動產顧問有限公司",
+  taxId: "28854936",          // 統一編號（環球不動產顧問）
+  owner: "林黎金",            // 負責人（政府公文核准後依業主指示變更）
+  ownerEn: "",
 
   // ⚠ 電話／LINE／Email 為業主提供之「待確認」資料，正式對外前請再次核對
   displayPhone: "0963-666-859",
