@@ -1,5 +1,5 @@
 /* ============================================================
-   MJ HUB 邁聚商務中心 — 全站樣式（行動版優先）
+   環球商務中心 UIOC — 全站樣式（行動版優先）
    設計系統：Trust & Authority（ui-ux-pro-max 產生）× 品牌深藍金
    深藍 × 金 × 冷色淺灰底、襯線標題、柔和陰影、細緻圓角
    ============================================================ */
@@ -82,7 +82,7 @@ ul { list-style: none; }
 }
 .logo::before {
   content: ""; width: 30px; height: 30px; flex: none;
-  background: url("../images/favicon.png") center / cover no-repeat;
+  background: url("../images/favicon.png?v=uioc1") center / cover no-repeat;
   border-radius: 7px; box-shadow: var(--shadow-sm);
 }
 .main-nav {
